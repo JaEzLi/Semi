@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spinning Pre-Loader only with CSS3</title>
+	
+	<link rel="stylesheet" href="css/loader-9.css">
+</head>
+<body>
+	
+<background color="Black">
+
+	
+
+
+	<div class="loader-wrapper" id="loader-9">
+		  	<div id="loader">
+		 		<center><a href="home.html"> <img src="images/deathly_hallows.png"></center>
+		 	</div>
+	</div>
+
+	<script>
+		loaders = document.getElementsByClassName('loader-wrapper');
+		loaders[0].style.display="inherit";	
+		function change(self)
+		{
+			for (var i = loaders.length - 1; i >= 0; i--) {
+				loaders[i].style.display="none";
+				}
+			id = self.id;
+			loaders[id-1].style.display="inherit";
+		};
+	</script>
+</body>
+</html>
